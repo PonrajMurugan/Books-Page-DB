@@ -1,0 +1,44 @@
+
+[
+    {
+      "id": 1,
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDZLsLJ7Ornw-Ag7S3rKdUbMntya1t4uASSA&s",
+      "title": "Anandmath",
+      "author": "Bankim Chandra Chatterjee",
+      "price": 250,
+      "description": "Books help us to teach ourselves about history, the arts, science, religion, nature, mathematics, and technology –– anything and everything in our universe and beyond. Books also help us to understand the effect that all those things have on us and our world."
+    },
+    {
+      "id": 2,
+      "image":"https://media.istockphoto.com/id/123217686/photo/old-knowledge.jpg?s=612x612&w=0&k=20&c=WIe5EKmOxWUEXSnfzjtt6iQiEsSvq5GMFDCqki1IYwg=",
+      "title": "Bunch of old letters",
+      "author": "Jawahar Lal Nehru",
+      "price": 500,
+      "description": "A book is a medium for recording information in the form of writing or images. Books are typically composed of many pages, bound together and protected by a cover. Modern bound books were preceded by many other written mediums, such as the codex, the scroll and the tablet."
+    },
+    {
+      "id": 3,
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJWj9pfb-uFvxqPNPa3Yrq3w5Nj2v8B1-Rg&s",
+      "title": "Conquest of self",
+      "author": "Mahatma Gandhi",
+      "price": 600,
+      "description": "A book is a number of pieces of paper, usually with words printed on them, which are fastened together and fixed inside a cover of stronger paper or cardboard. Books contain information, stories, or poetry, for example. His eighth book came out earlier this year and was an instant bestseller."
+    },
+    {
+      "id": 4,
+      "image":"https://economictimes.indiatimes.com/thumb/msid-98117504,width-1200,height-900,resizemode-4,imgsize-24942/best-novels-for-beginners.jpg?from=mdr",
+      "title": "Chandalika",
+      "author": "Rabindra Nath Tagore",
+      "price": 950,
+      "description": "Books improve your writing skills. Books introduce us to things and perspectives. Books help in self-improvement. Reading books improve your communication skills."
+    },
+    {
+      "id": 5,
+      "image":"https://www.spectator.co.uk/wp-content/uploads/2023/03/iStock-1087508538.jpg?w=1272",
+      "title": "War and Peace",
+      "author":"Leo Tolstoy",
+      "price": 800,
+      "description": "Describe the main plot, theme, or idea only. Avoid details that may overwhelm or confuse a reader who's only taking a second or two to decide whether to find out more about your book. Also, keep your language short and simple"
+    }
+  ]
+  

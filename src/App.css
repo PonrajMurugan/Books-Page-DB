@@ -1,0 +1,16 @@
+.bk{
+    background-image: url('../src/components//images/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+.bk.cart-page{
+    background-image: url('../src/components//images/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:175vh;  
+  
+
+
+} 

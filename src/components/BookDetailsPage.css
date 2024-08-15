@@ -1,0 +1,21 @@
+.book-details-page {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  
+  .book-details-page h1 {
+    font-size: 28px;
+  }
+  
+  .book-details-page p {
+    font-size: 18px;
+  }
+  
+.book-images{
+  width:300px;
+  height:30vh;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}

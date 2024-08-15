@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #ffcc33, #ff7e5f);
+  background-size: 600% 600%;
+  animation: gradientAnimation 8s ease infinite;
+   font-family: 'Roboto', sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; 
+  }
+  50% {
+    background-position: 100% 50%; 
+  }
+  100% {
+    background-position: 0% 50%; 
+  }
+}
+
+
+
+
+
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon .fa-shopping-cart {
+  color: #333; 
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px; 
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
