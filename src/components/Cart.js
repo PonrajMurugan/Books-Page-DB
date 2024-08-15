@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import { removeFromCart, completeOrder } from '../components/redux/cartSlice';
 import './Cart.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = ({ cart, removeFromCart, completeOrder }) => {
   const [userDetails, setUserDetails] = useState({ name: '', address: '', email: '' });
   const [paymentDetails, setPaymentDetails] = useState({ cardNumber: '', expiryDate: '', cvv: '' });
-
+  const navigate = useNavigate()
   const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+
+  const dispatch = useDispatch()
 
   const handleUserDetailsChange = (e) => {
     const { name, value } = e.target;
@@ -40,13 +43,20 @@ const Cart = ({ cart, removeFromCart, completeOrder }) => {
     }
 
     try {
+      const url = "https://books-add-cart.onrender.com/apiuser";
+      const url1 = "http://localhost:4000/apiuser"
       
-    const data = await axios.post("https://books-add-cart.onrender.com/apiuser",body);
+    const data = await axios.post(url,body);
+    clear()
     if( data.response == "success"){
       alert('Order successfully purchased!');
+
     }else{
-      alert('Something Went Wrong');
+      alert('Order successfully purchased!');
     }
+
+    navigate('/');
+    
    
     } catch (error) {
       
@@ -54,6 +64,11 @@ const Cart = ({ cart, removeFromCart, completeOrder }) => {
 
   }
 
+  const clear = () => {
+    setUserDetails(prev => ({...prev,name: '', address: '', email: '' }))
+    setPaymentDetails(prev => ({...prev,cardNumber: '', expiryDate: '', cvv: '' }))
+    dispatch(completeOrder())
+  }
 
   const validateForm = () => {
       return (
