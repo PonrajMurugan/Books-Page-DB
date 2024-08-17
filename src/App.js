@@ -10,30 +10,32 @@ import { useEffect, useState } from 'react';
 import Footer from './components/footer';
 
 
+
 const App = () => {
   const location = useLocation();
   const [state,setState] = useState({})
-  const isCartRoute = location.pathname === '/cart';
-  const containerClass = isCartRoute ? 'bk cart-page' : 'bk';
+
 
   return (
-    <div className={containerClass}>
-       <Header />
-      <Routes>
-       
-        <Route path="/" element={<HomePage />} />
-        <Route path="/book/:id" element={<BookDetailsPage />} />
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
-    </div>
-  );
+    <div>
+    <Header />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/book/:id" element={<BookDetailsPage />} />
+      <Route path="/cart" element={<Cart />} />
+    </Routes>
+
+
+    {location.pathname !== '/cart' && <Footer />}
+  </div>
+);
 };
 
 const Main = () => (
-  <Router>
-    <App />
-    <Footer />
-  </Router>
+<Router>
+  <App />
+
+</Router>
 );
 
 export default Main;

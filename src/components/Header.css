@@ -46,6 +46,8 @@ nav ul li a {
   display: flex;
   align-items: center;
   position: relative;
+
+  margin-top: 15px;
 }
 
 .cart-link {
@@ -56,6 +58,7 @@ nav ul li a {
 
 .cart-icon {
   position: relative;
+  /* padding-top: 15px; */
 }
 
 .cart-icon .fa-shopping-cart {
