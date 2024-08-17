@@ -7,6 +7,7 @@ import Cart from './components/Cart';
 import './App.css'; 
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Footer from './components/footer';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
 const Main = () => (
   <Router>
     <App />
+    <Footer />
   </Router>
 );
 
