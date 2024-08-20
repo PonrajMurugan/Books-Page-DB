@@ -75,3 +75,21 @@ nav ul li a {
   padding: 2px 6px;
   font-size: 12px;
 }
+
+.admin-link .admin-button {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-left: -10px;
+  padding: 5px 0px;
+  color: #495057;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.admin-link .admin-button:hover {
+  background-color: #e2e6ea;
+  color: #212529;
+}

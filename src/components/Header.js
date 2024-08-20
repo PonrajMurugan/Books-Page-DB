@@ -5,7 +5,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-
 import './Header.css';
 
 const Header = () => {
@@ -15,9 +14,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        
         <Link to="/">
-        <i className="fas fa-book"></i> 
+          <i className="fas fa-book"></i> 
           BookStore
         </Link>
       </div>
@@ -32,7 +30,11 @@ const Header = () => {
                 <FontAwesomeIcon icon={faShoppingCart} className="cart-icon" />
                 <span className="cart-count">{cartCount}</span>
               </div>
-              
+            </Link>
+          </li>
+          <li>
+            <Link to="/admin-login" className="admin-link">
+              <button className="admin-button">Login</button>
             </Link>
           </li>
         </ul>

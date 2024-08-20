@@ -8,6 +8,10 @@ import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Footer from './components/footer';
+import AdminLogin from './components/AdminLogin';
+import AdminDashboard from './AdminDashboard';
+
+
 
 
 
@@ -23,10 +27,16 @@ const App = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/book/:id" element={<BookDetailsPage />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/admin-login" element={<AdminLogin />} />
+      <Route path="/admin-dashboard" element={<AdminDashboard />} />
+
+   
+
     </Routes>
 
 
-    {location.pathname !== '/cart' && <Footer />}
+    {location.pathname !== '/admin-login' && location.pathname !== '/admin-dashboard' && <Footer />}
+
   </div>
 );
 };
